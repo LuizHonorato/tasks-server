@@ -19,7 +19,7 @@ class SearchTasksDTO
     public static function makeFromRequest(Request $request): self
     {
         return new self(
-            $request->user()->id ?? '052402bf-4d5a-49c9-bfbc-2e29b14252df',
+            $request->user()->id,
             $request['title'] ?? null,
             $request['category_id'] ?? null,
             $request['status'] ?? null,

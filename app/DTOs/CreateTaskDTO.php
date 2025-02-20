@@ -17,7 +17,7 @@ class CreateTaskDTO
     public static function makeFromRequest(CreateUpdateTaskFormRequest $request): self
     {
         return new self(
-            $request->user()->id ?? '052402bf-4d5a-49c9-bfbc-2e29b14252df',
+            $request->user()->id,
             $request['category_id'],
             $request['title'],
             $request['description'],

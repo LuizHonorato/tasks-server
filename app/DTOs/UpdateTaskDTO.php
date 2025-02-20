@@ -19,7 +19,7 @@ class UpdateTaskDTO
     {
         return new self(
             $request['id'],
-            $request->user()->id ?? '052402bf-4d5a-49c9-bfbc-2e29b14252df',
+            $request->user()->id,
             $request['category_id'],
             $request['title'],
             $request['description'],
