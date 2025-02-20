@@ -7,6 +7,12 @@ myTasks Server - Aplicação para cadastro de tarefas.
 - Docker
 - docker-compose
 
+# Sobre o projeto
+
+No escopo técnico, foi tomada a decisão de implementar essa aplicação utilizando o padrão de design `Repository Pattern`,
+devido o projeto não apresentar regras de negócio complexas o suficiente a ponto de justificarem uma arquitetura
+que explicitasse essas regras, como o Domain Driven Design por exemplo.
+
 # Sobre o build
 
 Esta API foi criada com a utilização das seguintes ferramentas:
